@@ -46,16 +46,16 @@ In particular, during the implementation of my project, I worked on a subset of 
 The evaluation of the approaches is based on the criterion of accuracy, as this was a focus of the studies conducted on the [dataset](http://www.sciencedirect.com/science/article/pii/S095741741630598X). 
 |   Approach Name   |   Accuracy   | Accuracy Eight Approach | Accuracy Ninth Approach |
 |  :---:   |   :---:   |   :---:   |   :---:   |
-| First Approach | 0.881  | 0.880  |0.885|
-| Second Approach V1 | 0.865 | 0.871 | 0.867|
-| Second Approach V2 | 0.872  |0.875|0.873|
-| Second Approach LoG |0.862|0.864|0.864|
-| Third Approach HOG |0.915|0.917|0.921|
-| Third Approach COL | 0.647  |0.646|0.648|
-| Third Approach EDGE | 0.833  |0.828|0.833|
-| Third Approach HOG n COL|0.905|0.897|0.899|
-| Third Approach HOG n EDGE|0.917|0.912|0.916|
-| Third Approach HOG n COL n EDGE |0.919|0.907|0.914|
+| First  | 0.881  | 0.880  |0.885|
+| Second V1 | 0.865 | 0.871 | 0.867|
+| Second V2 | 0.872  |0.875|0.873|
+| Second LoG |0.862|0.864|0.864|
+| Third HOG |0.915|0.917|0.921|
+| Third COL | 0.647  |0.646|0.648|
+| Third EDGE | 0.833  |0.828|0.833|
+| Third HOG  COL|0.905|0.897|0.899|
+| Third HOG  EDGE|0.917|0.912|0.916|
+| Third HOG  COL  EDGE |0.919|0.907|0.914|
 | Fourth V1 | 0.822  |0.824|0.830|
 | Fourth V2 | 0.794  |0.798|0.795|
 | Fifth v1 | 0.840  |0.840|0.840|
