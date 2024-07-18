@@ -24,7 +24,7 @@ The dataset chosen for this task is [CNRPark+EXT](http://cnrpark.it/), which con
 
 In particular, during the implementation of my project, I worked on a subset of the CNRPark+EXT dataset. Specifically, I focused analysis on a set of 1000 images, including 35,250 patches of parking slots. The subset was split into a training set (X_train) and a test set (X_test), with a ratio of 65% to 35%, respectively. This choice was driven by the need to manage the computational resources effectively while implementing a variety of approaches. For each approach, a random search method was developed to identify the optimal parameters.
 
-## Overview of the various approaches that have been implemented. 
+## Overview of the various approaches
 <br>
 
 |   Approaches   | Description |
@@ -41,7 +41,7 @@ In particular, during the implementation of my project, I worked on a subset of 
 | Tenth Approach (Entropy) | This approach predicts parking slot occupancy by analyzing patches using Fourier entropy. It processes each slot's image to compute Fourier entropy. If the entropy exceeds a threshold, the slot is predicted to be occupied. |
 
 
-## The performance of the approaches
+## Performance
 
 The evaluation of the approaches is based on the criterion of accuracy, as this was a focus of the studies conducted on the [dataset](http://www.sciencedirect.com/science/article/pii/S095741741630598X). 
 |   Approach Name   |   Accuracy   | Accuracy Eight Approach | Accuracy Ninth Approach |
