@@ -1,7 +1,7 @@
 # Computer-Vision-Project
 
 ## Parking occupancy detection with traditional computer vision techniques
-
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1UvREmHTqCi1fZ1rsBOegrqWtHjGnYj0h?usp=sharing)
 ## Project description
 With the increasing number of vehicles in urban areas, effective management of parking facilities has become a pressing concern for cities, businesses, and individuals alike. Currently, many parking areas rely on basic sensor-based systems to determine occupancy levels. However, these conventional methods are prone to inaccuracies and often fail to provide real-time data. Advanced parking management solutions offer significant advantages beyond operational efficiency. They facilitate the efficient flow of vehicular traffic, mitigate congestion by directing drivers to alternative parking areas when primary zones reach capacity, and enhance the customer experience by eliminating the need to search for available spaces.
 
@@ -20,7 +20,7 @@ While it is challenging to achieve state-of-the-art performance with traditional
 The dataset chosen for this task is [CNRPark+EXT](http://cnrpark.it/), which consists in a collection of images obtained from security cameras installed in a parking facility containing 164 parking slots. 
 [CNRPark+EXT](http://cnrpark.it/) builds upon an initial dataset known as CNRPark, characterized by a limited number of images, a single weather condition (sunny), and a smaller set of cameras (only 2). However, the extended version, [CNRPark+EXT](http://cnrpark.it/), includes approximately 4000 images captured by 9 distinct cameras operating under three distinct weather conditions (sunny, cloudy, rainy). Furthermore, the dataset includes 9 CSV files, each corresponding to a specific camera, containing the bounding box positions, amounting to a total of 145,000. Each image filename incorporates metadata such as the weather condition, the unique camera identifier, the date, and the time of capture.
 
-In particular, during the implementation of my project, I worked on a subset of the CNRPark+EXT dataset. Specifically, I focused analysis on a set of 1000 images, including 35,250 patches of parking slots. The subset was split into a training set (X_train) and a test set (X_test), with a ratio of 65% to 35%, respectively. This choice was driven by the need to manage the computational resources effectively while implementing a variety of approaches. For each approach, a random search method was developed to identify the optimal parameters.
+In particular, during the implementation of my project, I worked on a subset of the [CNRPark+EXT](http://cnrpark.it/) dataset. Specifically, I focused analysis on a set of 1000 images, including 35,250 patches of parking slots. The subset was split into a training set (X_train) and a test set (X_test), with a ratio of 65% to 35%, respectively. This choice was driven by the need to manage the computational resources effectively while implementing a variety of approaches. For each approach, a random search method was developed to identify the optimal parameters.
 
 ## Overview of the various approaches
 <br>
@@ -41,7 +41,8 @@ In particular, during the implementation of my project, I worked on a subset of 
 
 ## Performance
 
-The evaluation of the approaches is based on the criterion of accuracy, as this was a focus of the studies conducted on the [dataset](http://www.sciencedirect.com/science/article/pii/S095741741630598X). 
+The evaluation of the approaches is based on the criterion of accuracy, as this was a focus of the studies conducted on the [dataset](http://www.sciencedirect.com/science/article/pii/S095741741630598X).<br>
+As mentioned above, the following results were obtained on a subset of the original dataset.<br>
 |   Approach Name   |   Accuracy   | Accuracy Eight Approach | Accuracy Ninth Approach |
 |  :---:   |   :---:   |   :---:   |   :---:   |
 | First  | 0.881  | 0.880  |0.885|
@@ -57,7 +58,7 @@ The evaluation of the approaches is based on the criterion of accuracy, as this 
 | Fourth V1 | 0.822  |0.824|0.830|
 | Fourth V2 | 0.794  |0.798|0.795|
 | Fifth V1 | 0.840  |0.840|0.840|
-| Fifth V2 | 0.785  |  -  |  -  |
+| Fifth V2 | 0.785  |  -  |0.793|
 | Sixth | 0.849 |0.851| 0.848|
 | Seventh | 0.928 |  -  |  -  |
 | Tenth | 0.898 |0.899|0.898|
